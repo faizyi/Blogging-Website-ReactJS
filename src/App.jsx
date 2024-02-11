@@ -40,6 +40,7 @@ function App() {
       </header>
       <Routes>
         <Route path='/' element={<Home/>}/>
+        <Route path='/Blogging-Website-ReactJS' element={<Home/>}/>
         <Route path='/allblogs' element={<Home/>}/>
         <Route path='/home' element={<Home/>}/>
         <Route path='/login' element={user ? <Navigate to={'/dashboard'}/>:<Login/>}/>
