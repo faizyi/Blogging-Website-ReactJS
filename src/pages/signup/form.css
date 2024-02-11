@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.container .form{
+    min-width: 100%;
+    min-height: 300px; 
+}
+.form .heading{
+    display: flex;
+    justify-content: center;
+}
+.form .input{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.input input{
+    min-width: 400px;
+    padding: 10px;
+    margin-top: 10px;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    border: 1px solid black;
+}   
+.input .btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.btn button{
+    width: 100%;
+    padding: 10px;
+    background-color: cornflowerblue;
+    border: none;
+    outline: none;
+    border-radius: 100px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+}
+.btn button:hover{
+    background-color: white;
+    color: cornflowerblue;
+    border: 1px solid cornflowerblue;
+}
+.container .account{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.loader{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+/* Media queries for responsiveness */
+
+/* Medium screens (tablets) */
+@media only screen and (min-width: 309px) and (max-width: 405px) {
+    .input input{
+        min-width: 300px;
+        padding: 10px;
+    }
+}
+@media only screen and (min-width: 180px) and (max-width: 308px) {
+    .input input{
+        min-width: 200px;
+        padding: 10px;
+    }
+}

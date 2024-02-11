@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: .5s ease;
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 10;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background-color: white;
+    box-shadow: 1px 1px 10px black;
+    color: white;
+}
+.navbar .logo{
+    height: 70px;
+    margin-top: -20px;
+}
+.navbar .logo img{
+    max-width: 120px;
+}
+.navbar .nav{
+    display: flex;
+    gap: 50px;
+    margin-top: 10px;
+}
+nav a a{
+    background-color: cornflowerblue;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    color: white;
+    width: 150px;
+    text-align: center;
+    border-radius: 20px;
+    transition: .3s ease-in;
+    border: none;
+    outline: none;
+    height: 30px;
+}
+nav a a:hover{
+    background-color: white;
+    color: cornflowerblue;
+    border: 1px solid cornflowerblue;
+}
+.icon{
+    display: none;
+}
+
+
+
+/* Media queries for responsiveness */
+
+@media only screen and (min-width: 100px) and (max-width: 790px){
+    .icon{
+        display: block;
+        color: cornflowerblue;
+        font-size: 30px;
+        margin-top: 5px;
+    }
+    .navbar .nav{
+        position: fixed;
+        top: 70px;
+        right: 20px;
+        display: block;
+        display: none;
+    }
+    .navbar .nav.active{
+        display: block;
+    }
+    nav a a{
+        margin-top: 10px;
+    }
+}

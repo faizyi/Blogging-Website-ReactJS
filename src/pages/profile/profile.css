@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.profile-container .profile{
+    display: flex;
+    justify-content: center;
+    box-shadow: 1px 1px 5px black;
+    width: 500px;
+    border-radius: 10px;
+    margin-top: 100px;
+}
+.profile-container .user-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.user-profile .user-pic img{
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+    background-color: beige;
+    cursor: pointer;
+}
+#profile{
+    display: none;
+}
+.user-profile .user-name{
+    display: flex;
+    justify-content: center;
+}
+.user-name h2{
+    text-transform: capitalize;
+}
+.user-profile .user-email{
+    display: flex;
+    justify-content: center;
+}
+.user-profile .logout-btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.logout-btn button{
+    background-color: cornflowerblue;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    width: 150px;
+    text-align: center;
+    border-radius: 20px;
+    transition: .3s ease-in;
+    border: none;
+    padding: 5px;
+}
+.logout-btn button:hover{
+    background-color: white;
+    color: cornflowerblue;
+    border: 1px solid cornflowerblue;
+}
+.user-profile .yourblogs-btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.yourblogs-btn button{
+    background-color: cornflowerblue;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    width: 150px;
+    text-align: center;
+    border-radius: 20px;
+    transition: .3s ease-in;
+    border: none;
+    padding: 5px;
+}
+.yourblogs-btn button:hover{
+    background-color: white;
+    color: cornflowerblue;
+    border: 1px solid cornflowerblue;
+}
+.loader{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* Media queries for responsiveness */
+
+@media only screen and (min-width: 200px) and (max-width: 790px){
+    .profile-container .profile {
+        display: flex;
+        justify-content: center;
+        width: 90%; /* Adjust width for smaller screens */
+        margin-top: 90px; /* Reduce top margin */
+      }
+      
+      .user-profile .user-pic img {
+        width: 150px; /* Decrease image size */
+        height: 150px;
+      }
+    
+      .logout-btn button {
+        width: 120px; /* Decrease button width */
+        font-size: 16px; /* Decrease font size */
+      }
+}

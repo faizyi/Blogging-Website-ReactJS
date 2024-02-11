@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.all{
+    margin-top: 20px;
+}
+.home-container .all-blogs-heading{
+    display: flex;
+    justify-content: center;
+    box-shadow: 1px 1px 5px black;
+    width: 500px;
+    border-radius: 10px;
+    margin-top: 100px;
+}
+.all-blogs-container .all-blogs{
+    display: flex;
+    justify-content: space-around;
+}
+.all-blogs-container .all-blogs .all-blog-content{
+    width: 80%;
+    padding: 10px;
+    /* border-top: 1px solid rgb(211, 202, 202); */
+    border-bottom: 1px solid rgb(211, 202, 202);
+}
+.all-blog-content .all-blog-user-img{
+    display: flex;
+    justify-content: space-between;
+}
+.all-blog-user-img .currUser-container{
+    display: flex;
+}
+.currUser-container .publish-time p span{
+    color: cornflowerblue;
+}
+.all-blog-user-img .currUser-data .currUser-pic img{
+    width: 70px;
+    border-radius: 100%;
+}
+.currUser-pic{
+    display: flex;
+    justify-content: center;
+}
+.currUser-name{
+    display: flex;
+    justify-content: center;
+}
+.currUser-email{
+    display: flex;
+    justify-content: center;
+}
+.currUser-data .currUser-name h2{
+    text-transform: capitalize;
+}
+.all-blog-content .all-blog-img{
+    width: 280px;
+}
+.all-blog-content .all-blog-img h1{
+    font-size: 15px;
+}
+.all-blog-content .all-blog-img img{
+    width: 250px;
+    border-radius: 10px;
+}
+.loader{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* Media queries for responsiveness */
+
+@media only screen and (min-width: 100px) and (max-width: 520px){
+    .home-container .all-blogs-heading{
+        width: 90%;
+        margin-top: 90px;
+    }   
+    .all-blog-content .all-blog-user-img{
+        display: flex;
+        /* flex-direction: column-reverse; */
+        justify-content: space-between;
+    }
+    .all-blog-user-img .currUser-container{
+        display: block;
+    }
+    .all-blog-user-img .currUser-data .currUser-pic img{
+        width: 40%;
+    }
+    .currUser-name h2{
+        font-size: 10px;
+    }
+    .currUser-email p{
+        font-size: 10px;
+    }
+}
+@media only screen and (min-width: 100px) and (max-width: 360px){
+    .home-container .all-blogs-heading{
+        width: 90%;
+        margin-top: 90px;
+    }  
+    .all-blog-img img{
+        width: 10px;
+    }
+    .publish-time{
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    .publish-time p{
+        font-size: 10px;
+    }
+    .currUser-data{
+        margin-top: 10px;
+    }
+    .all-blog-user-img .currUser-data .currUser-pic img{
+        width: 40%;
+    }
+    .currUser-name h2{
+        font-size: 7px;
+    }
+    .currUser-email p{
+        font-size: 6px;
+    }
+}
